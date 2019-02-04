@@ -37,7 +37,7 @@
 
 #if WITH_NON_STORING
 #undef RPL_NS_CONF_LINK_NUM
-#define RPL_NS_CONF_LINK_NUM 100 /* Number of links maintained at the root default=40*/
+#define RPL_NS_CONF_LINK_NUM 	40 /* Number of links maintained at the root default=40*/
 #undef UIP_CONF_MAX_ROUTES
 #define UIP_CONF_MAX_ROUTES 0 /* No need for routes */
 #undef RPL_CONF_MOP
@@ -49,7 +49,7 @@
 #endif
 
 #ifndef QUEUEBUF_CONF_NUM
-#define QUEUEBUF_CONF_NUM          14	//default=4
+#define QUEUEBUF_CONF_NUM          4	//default=4
 #endif
 
 #ifndef UIP_CONF_BUFFER_SIZE
@@ -110,7 +110,7 @@
 #define NETSTACK_CONF_LLSEC               noncoresec_driver
 
 #undef NONCORESEC_CONF_SEC_LVL
-#define NONCORESEC_CONF_SEC_LVL  6      
+#define NONCORESEC_CONF_SEC_LVL  5      
 /* if using Level 7, it may cause delay in CC2538 and command not responding 
 So optimum value: NONCORESEC_CONF_SEC_LVL=6 */
 
